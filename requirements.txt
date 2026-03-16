@@ -1,0 +1,15 @@
+# --- Lõi hệ thống cơ bản ---
+streamlit==1.41.1        # Giao diện người dùng
+langchain==0.3.16        # Framework RAG
+langchain-community==0.3.16
+faiss-cpu==1.9.0         # Hoặc faiss-gpu nếu có card rời - Vector Database
+pdfplumber               # Đọc file PDF
+PyPDF
+numpy
+pandas
+torch
+
+# --- Thư viện bổ sung cho 10 yêu cầu mở rộng ---
+python-docx              # Hỗ trợ đọc và xử lý file DOCX (Yêu cầu 1)
+sentence-transformers    # Dùng cho Multilingual MPNet và Cross-Encoder Re-ranking (Yêu cầu 9)
+rank_bm25                # Thuật toán tìm kiếm từ khóa dùng cho Hybrid Search (Yêu cầu 7)
